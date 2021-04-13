@@ -1,0 +1,27 @@
+{
+  "name": "ui5-task-cachebuster-indexing",
+  "version": "1.0.0",
+  "description": "UI5 Tooling Task that for indexing files to enable the cachebuster directly into the dist folder",
+  "main": "lib/cachebuster-indexer.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lemaiwo/ui5-task-cachebuster-indexing.git"
+  },
+  "keywords": [
+    "ui5",
+    "tooling",
+    "task"
+  ],
+  "author": "Wouter Lemaire",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lemaiwo/ui5-task-cachebuster-indexing/issues"
+  },
+  "homepage": "https://github.com/lemaiwo/ui5-task-cachebuster-indexing#readme",
+  "dependencies": {
+    "@ui5/builder": "^2.8.2"
+  }
+}
