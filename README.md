@@ -46,4 +46,12 @@ builder:
 
 ## How it works
 
-The task will run the default generate cachebuster info task and make a clone of all resources with the timestamp from the cachebuster info in the path.
+The task will run the default generate cachebuster info task and make a clone of all resources with the timestamp from the cachebuster info in the path. This will generate the resources with a path that can be found by the cachebuster. 
+
+Example path: 
+
+It is not needed to run the "generateCachebusterInfo" task as this already done inside this one. Nevertheless, this task should always be executed after the cachebuster info generation "generateCachebusterInfo".
+
+## Known limitations
+
+only works with timestamp
