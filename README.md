@@ -43,15 +43,24 @@ builder:
     configuration:
       debug: true
 ```
+Or when the task "generateCachebusterInfo" is enabled
+```yaml
+builder:
+  customTasks:
+  - name: ui5-task-cachebuster-indexing
+    afterTask: generateCachebusterInfo
+    configuration:
+      debug: true
+```
 
 ## How it works
 
 The task will run the default generate cachebuster info task and make a clone of all resources with the timestamp from the cachebuster info in the path. This will generate the resources with a path that can be found by the cachebuster. 
 
-Example path: 
+For example a file with name "Component-dbg.js" will be cloned to  "~1618522173771~/Component-dbg.js", or another example "model/models.js" will be cloned to "~1618522173782~/model/models.js".
 
 It is not needed to run the "generateCachebusterInfo" task as this already done inside this one. Nevertheless, this task should always be executed after the cachebuster info generation "generateCachebusterInfo".
 
 ## Known limitations
 
-only works with timestamp
+The task "generateCachebusterInfo" can be configured to use timestamp or hash. This task only supports timestamp as it's currently not possible to acces the global config inside a custom task.
