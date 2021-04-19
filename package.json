@@ -1,6 +1,6 @@
 {
   "name": "ui5-task-cachebuster-indexing",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "UI5 Tooling Task that for indexing files to enable the cachebuster directly into the dist folder",
   "main": "lib/cachebuster-indexer.js",
   "directories": {
